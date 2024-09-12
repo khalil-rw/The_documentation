@@ -1,0 +1,10 @@
+Essential packages to install: base base-devel linux linux-firmware linux-headers intel-ucode
+Grub installation: grub-install --target=i386-pc /dev/<partition>
+		   grub-mkconfig -o /boot/grub/grub.cfg
+
+If this error message shows up after completing installation and booting: 
+
+"<root_partition> mounted successfully but /sbin/init doesn't exist
+Bailing out...", download "systemd-sysvcompat" package.
+
+
